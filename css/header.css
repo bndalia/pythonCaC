@@ -79,6 +79,8 @@ header nav {
 
 }
 
+
+
 header nav ul {
     /*Tamaños y distancias*/
     height:inherit;
@@ -96,6 +98,23 @@ header nav ul {
     gap: 20rem;
     font-size: 180% !important;
 }
+
+li p.active,li p:hover{
+    background: rgb(243, 235, 235);
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:#000;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
 
 
 /*------------CAMPO BUSCAR-------------*/
