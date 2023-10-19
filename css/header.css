@@ -96,10 +96,10 @@ header nav ul {
     justify-content: space-between;
     align-items: center;  
     gap: 20rem;
-    font-size: 180% !important;
+    font-size: 120% !important;
 }
 
-li p.active,li p:hover{
+li a.active,li a:hover{
     background: rgb(243, 235, 235);
     transition: .5s;
     border-radius: 10px;
