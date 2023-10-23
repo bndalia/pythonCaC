@@ -2,7 +2,7 @@ var carrito;
 var usu = "";
 var listaUsuarios = [];
 window.onload = () => {
-    emailjs.init("9FGoHE7v3zGxA7-gg");
+   /* emailjs.init("9FGoHE7v3zGxA7-gg");
 
     let cart = JSON.parse(localStorage.getItem('carrito'));
     if (cart != null) {
@@ -16,13 +16,13 @@ window.onload = () => {
         listaUsuarios = usuarios;
     } else {
         listaUsuarios = [];
-    }
+    }*/
 
     //Click events para las categorías
-    $(".art-all").click(() => { requestAllProducts("/category/electronics"); })
-    $(".art-mujer").click(() => { requestAllProducts("/category/women's clothing"); })
-    $(".art-hombre").click(() => { requestAllProducts("/category/men's clothing"); })
-    $(".art-jewele").click(() => { requestAllProducts("/category/jewelery"); })
+    $(".section_productos").click(() => { requestAllProducts("/category/electronics"); })
+    $(".section_pc").click(() => { requestAllProducts("/category/women's clothing"); })
+    $(".section_ayuda").click(() => { requestAllProducts("/category/men's clothing"); })
+    $(".section_contacto").click(() => { requestAllProducts("/category/jewelery"); })
 
     //Click event del carrito
     $("#carro").click(() => { showCart(); });

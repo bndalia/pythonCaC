@@ -1,0 +1,84 @@
+/*------------CATÁLOGO------------*/
+main .catalogo {
+    grid-area: 1/1/2/2;
+
+    /*Display interno*/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, fit-content(100%));
+    grid-row-gap: 0.5rem;
+
+    /*Fondo*/
+    background-color: #fff;
+}
+
+/*Contenedor de los artículos*/
+main .catalogo .item-container {
+    grid-area: 2 / 1 / 2 / 2;
+    padding: 2rem;
+
+    /*Cuadrícula grid dentro de container*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+}
+
+/*Artículo*/
+main .catalogo .item-container .item {
+    /*Color de fondo*/
+    background-color: lightblue;
+
+    /*Borde*/
+    border: 3px solid red;
+    border-radius: 2rem;
+
+    /*Letra*/
+    color: black;
+
+    /*Display interior*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+main .catalogo .item-container .item h3 {
+    text-align: center;
+}
+
+main .catalogo .item-container .item:hover {
+    /*Borde*/
+    border: 3px solid darkblue;
+    border-radius: 2rem;
+
+}
+
+main .catalogo .item-container .item img {
+    width: 15rem;
+}
+
+/*------------MEDIA QUERIES------------*/
+@media (max-width: 950px) {
+    /*Botones*/
+    main .catalogo .control button{
+        width: fit-content;
+    }
+    /*Contenedor de los artículos*/
+    main .catalogo .item-container {
+        /*Cuadrícula grid dentro de container*/
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media (max-width: 440px) {
+    main .catalogo .item-container {
+        /*Cuadrícula grid dentro de container*/
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0rem;
+    }
+}
