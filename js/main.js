@@ -22,7 +22,7 @@ window.onload = () => {
     $(".section_productos").click(() => { requestAllProducts("/category/electronics"); })
     $(".section_pc").click(() => { window.open("agregarProducto.html"); })
     // $(".section_ayuda").click(() => { requestAllProducts("/category/men's clothing"); })
-    // $(".section_contacto").click(() => { requestAllProducts("/category/jewelery"); })
+    $(".section_contacto").click(() => { window.open("contacto.html"); })
 
     //Click event del carrito
     $("#carro").click(() => { showCart(); });
