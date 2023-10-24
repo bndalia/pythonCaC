@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- ANIMATE CSS -->
+    <!-- Animacion CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!--javaScript-->
+    <script defer src="/js/contacto.js"></script>
 </head>
 <body>
     
@@ -22,32 +24,43 @@
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Contactanos </h3>
-                <form action="">
-                    <p>
-                        <label>Nombre Completo</label>
-                        <input type="text" name="nombre">
-                    </p>
-                    <p>
-                        <label>Email </label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Celular</label>
-                        <input type="tel" name="cel">
-                    </p>
-                    <p>
-                        <label>Motivo</label>
-                        <input type="text" name="motivo">
-                    </p>
-                    <p class="block">
-                       <label>Mensaje</label> 
-                        <textarea name="mensaje" rows="3"></textarea>
-                    </p>
-                    <p class="block">
+                <form id="form" action="">
+
+                    <div class="input-control">
+                        <label for="nombre">Nombre Completo</label>
+                        <input id="nombre" type="text" name="nombre">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="email">Email </label>
+                        <input id="email" type="email" name="email" >
+                        <div class="error"></div>
+                    </div>
+                  
+                    <div class="input-control">
+                        <label for="cel">Celular</label>
+                        <input id="cel" type="number" name="cel">
+                        <div class="error"></div>
+                    </div>
+                    
+                    <div class="input-control">
+                        <label for="motivo">Motivo</label>
+                        <input id="motivo" type="text" name="motivo">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="block">
+                       <label for="mensaje">Mensaje</label> 
+                        <textarea id="mensaje"  type="text" name="mensaje" rows="3"></textarea>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="block">
                         <button>
                             Enviar
                         </button>
-                    </p>
+                    </div>
                 </form>
             </div>
             <div class="contact-info">
