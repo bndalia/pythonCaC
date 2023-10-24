@@ -20,7 +20,7 @@ window.onload = () => {
 
     //Click events para las categorías
     $(".section_productos").click(() => { requestAllProducts("/category/electronics"); })
-    $(".section_pc").click(() => { requestAllProducts("/category/women's clothing"); })
+    $(".section_pc").click(() => { window.open("agregarProducto.html"); })
     $(".section_ayuda").click(() => { requestAllProducts("/category/men's clothing"); })
     $(".section_contacto").click(() => { requestAllProducts("/category/jewelery"); })
 
