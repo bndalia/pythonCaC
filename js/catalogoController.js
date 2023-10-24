@@ -13,7 +13,7 @@ function requestAllProducts(category = "", sort = "") {
     //Si se ordena se coge la última petición y se añade el orden, si no se hace la nueva petición
     sort ? newRequest = lastRequest + category + sort : newRequest = "https://fakestoreapi.com/products" + category
 
-    httpRequest.open("GET", newRequest);///category/men's clothing
+    httpRequest.open("GET", newRequest);
     httpRequest.send();
     lastRequest = newRequest;
 }

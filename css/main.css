@@ -41,7 +41,7 @@ body{
 }
 
 .contenedor .encabezado{
-    background: purple;
+    background: darkblue;
     color: #fff;
     grid-area: encabezado; 
     display: flex;
@@ -54,7 +54,7 @@ body{
 
 
 .contenedor .menu{
-    background: rgb(235, 8, 140);
+    background: #4070F4;
     grid-area: menu;
 }
 
