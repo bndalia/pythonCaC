@@ -1,0 +1,134 @@
+/*------------PRODUCTO (DETALLE)------------*/
+main .detalle {
+    /*Posición*/
+    grid-area: 1/1/2/2;
+
+    /*Márgenes*/
+    margin: 20rem;
+    margin-top: 1rem;
+
+    /*Display*/
+    display: flex;
+
+    /*Fondo*/
+    background-color: #eee;
+
+    max-height: 250px;
+    column-gap: 100px;
+}
+
+.detalle-images {
+    width: 60%;
+}
+
+/*
+.detalle img {
+    width: 90%;
+    margin: 2rem;
+}*/
+
+.detalle .info {
+    width: 100%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+
+/*------showcase imagenes------*/
+.product-imgs{
+    width: 100%;
+}
+
+.product-imgs img{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    max-width: 80%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+    max-width: 80%;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+/*Botón submit*/
+main .detalle button{
+    /*Letra*/
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 120%;
+
+    /*Tamaños*/
+    height: fit-content;
+    /*margin-left: 5vh;*/
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+
+    /*Borde*/
+    border: none;
+    border-radius: 1rem;
+
+    /*Colores*/
+    color: white;
+    background-color: #4070F4;
+}
+
+/*Botón submit hover*/
+main .detalle button:hover{
+    background: #265DF2;
+    
+    /*Borde*/
+    border-radius: 1rem;
+    border: 1px solid grey;
+}
+
+/*------------MEDIA QUERIES------------*/
+@media (max-width: 950px) {
+    main .detalle {
+        margin: 10rem;
+        margin-top: 1rem;    
+    }
+}
+@media (max-width: 700px) {
+    main .detalle {
+        margin: 4rem;
+        margin-top: 1rem;    
+
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -10,7 +10,7 @@ function requestAllProducts(category = "", sort = "") {
     httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = tratarRespuesta;
 
-    //Si se ordena se coge la última petición y se añade el orden, si no se hace la nueva petición
+    
     sort ? newRequest = lastRequest + category + sort : newRequest = "https://fakestoreapi.com/products" + category
 
     httpRequest.open("GET", newRequest);
@@ -43,6 +43,7 @@ function cargarElementos(datos) {
     main.empty();
 
     document.querySelector(".contenido").style["grid-template-rows"] = "repeat(1, fit-content(5rem))";
+    document.querySelector(".contenido").style.background = "#eee";
 
     /*Sección*/
     let catalogo = $("<section>")
@@ -55,20 +56,43 @@ function cargarElementos(datos) {
         .addClass("item-container")
         .appendTo(catalogo);
 
-    //Se cargan los artículos
+    //Se cargan los productos
     datos.forEach(item => {
         let divItem = $('<div>')
             .addClass('item')
             .appendTo(container);
 
-        let img = $('<img>')
-            .attr("src", item.image)
-            .appendTo(divItem);
-        let nomb = $('<h3>' + item.title + '</h3>')
-            .appendTo(divItem);
-        let preci = $('<h4>' + item.price + '$</h4>')
+        let divImgCon = $('<div>')
+            .addClass('image-content')
             .appendTo(divItem);
 
-        divItem.click(function (event) { requestProductoSeleccionado(item.id);});
+        let divCardImg = $('<div>')
+            .addClass('card-image')
+            .appendTo(divImgCon);
+
+        let img = $('<img>')
+            .attr("src", item.image)
+            .addClass('card-img')
+            .appendTo(divCardImg);
+
+        let divTituloCon = $('<div>')
+            .addClass('titulo-content')
+            .appendTo(divItem);   
+
+        let nomb = $('<h3>' + item.title + '</h3>')
+            .appendTo(divTituloCon);
+
+        let divPriceCon = $('<div>')
+            .addClass('precio-content')
+            .appendTo(divItem);  
+
+        let preci = $('<h4>USD ' + item.price + '</h4>')
+            .appendTo(divPriceCon);
+
+        let button = $('<button>' + "Ver Detalles" + '</button>')
+            .addClass('button')
+            .appendTo(divItem);  
+
+        button.click(function (event) { requestProductoSeleccionado(item.id);});
     });
 }
