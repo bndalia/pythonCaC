@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 /*------------CATÁLOGO------------*/
 main .catalogo {
     grid-area: 1/1/2/2;
@@ -9,7 +11,9 @@ main .catalogo {
     grid-row-gap: 0.5rem;
 
     /*Fondo*/
-    background-color: #fff;
+    background-color: #eee;
+
+
 }
 
 /*Contenedor de los artículos*/
@@ -17,37 +21,100 @@ main .catalogo .item-container {
     grid-area: 2 / 1 / 2 / 2;
     padding: 2rem;
 
-    /*Cuadrícula grid dentro de container*/
+    /*Cuadrícula grid dentro de container
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
     grid-column-gap: 3rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 2rem;*/
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 2rem;
+
+
 }
 
 /*Artículo*/
 main .catalogo .item-container .item {
     /*Color de fondo*/
-    background-color: lightblue;
+    background-color: #FFF;
 
     /*Borde*/
-    border: 3px solid red;
+    border: 2px solid black;
     border-radius: 2rem;
 
     /*Letra*/
     color: black;
-
+    
     /*Display interior*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /*row*/
     align-items: center;
     justify-content: space-evenly;
 
 }
 
+
+.image-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   /* border-radius: 50%;
+    border: 4px solid #4070F4;*/
+}
+
+.titulo-content{
+    /*background-color: lightblue;*/
+    max-width: 500px;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+.button:hover{
+    background: #265DF2;
+}
+
 main .catalogo .item-container .item h3 {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
+
+main .catalogo .item-container .item h4 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px !important;
+}
+
 
 main .catalogo .item-container .item:hover {
     /*Borde*/
@@ -57,7 +124,7 @@ main .catalogo .item-container .item:hover {
 }
 
 main .catalogo .item-container .item img {
-    width: 15rem;
+    width: 10rem;
 }
 
 /*------------MEDIA QUERIES------------*/
