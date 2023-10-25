@@ -1,3 +1,23 @@
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+}
+
+window.addEventListener('resize', slideImage);
 
 /**
  * Lanza una petición a la api para obtener los datos de un producto dado su id
@@ -55,7 +75,6 @@ function mostrarProducto(item){
             <div class = "img-display">
             <div class = "img-showcase">
                 <img src = "${item.image}" alt = "shoe image">
-
             </div>
             </div>
             <div class = "img-select">
@@ -122,7 +141,7 @@ function mostrarProducto(item){
 
 
 
-    let add = $('<button> Añadir al carrito </button>')
+    let add = $('<button> Agregar al Carrito </button>')
     .click(function (){
         if(usu!=""){
         //Se añade el artículo al carrito

@@ -28,7 +28,7 @@ window.onload = () => {
     $("#carro").click(() => { showCart(); });
 
     //Click events de registro e inicio de sesión
-    $("#registrarse").click(() => { showRegister(); });
+    //$("#registro").click(() => { showRegistro(); });
     $("#iniciarSesion").click(() => { showLogin(); });
 
 }

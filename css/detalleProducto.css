@@ -81,14 +81,11 @@ main .detalle {
 }
 
 
-
-
-
 /*Botón submit*/
 main .detalle button{
     /*Letra*/
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
 
     /*Tamaños*/
     height: fit-content;
@@ -100,7 +97,7 @@ main .detalle button{
 
     /*Borde*/
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 
     /*Colores*/
     color: white;
