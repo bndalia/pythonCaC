@@ -19,6 +19,7 @@ window.onload = () => {
     }*/
 
     //Click events para las categorías
+    $(".section_inicio").click(()=>{window.open("index.html");})
     $(".section_productos").click(() => { requestAllProducts("/category/electronics"); })
     $(".section_pc").click(() => { window.open("agregarProducto.html"); })
     // $(".section_ayuda").click(() => { requestAllProducts("/category/men's clothing"); })
