@@ -18,24 +18,6 @@ function requestAllProducts(category = "", sort = "") {
     lastRequest = newRequest;
 }
 
-function requestCarrito(){
-    var contenedor=document.getElementById("prueba");
-
-  fetch("../agregarProducto.html")
-  .then(response => {
-    return response.text(); // Convierte la respuesta a texto
-  })
-  .then(data => {
-    contenedor.innerHTML = data; // Inserta el contenido HTML en el contenedor
-  })
-  .catch(error => {
-    console.error("Error al cargar el archivo HTML: ", error);
-  });
-
-
-}
-
-
 
 /**
  * Gestiona la respuesta de la api.

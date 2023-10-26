@@ -3,140 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Informática</title>
+    <title>Armá Tu PC</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/agregaProducto.css'>
-     <!--Libraries-->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-     <script src="https://kit.fontawesome.com/ba0ac8d1c6.js" crossorigin="anonymous"></script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-     <script src="js/agregarProducto.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+
+
+    <script src="https://kit.fontawesome.com/ba0ac8d1c6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <script src="js/agregarProducto.js"></script>
+    <script src='js/main.js'></script>
+
+        <!--Libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba0ac8d1c6.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Tienda Informática</h1>
-    </header>
-    <section>
-        <div class="contenedor">
-            <div class="contenedor-items">
-
-                <div class="item">
-                    <span class="titulo-item"> Monitor </span>
-                    <img src="img/prod4.jpg" alt="" class="img-item">
-                    <span class="precio-item">$97.749</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Procesador Ryzen 3 </span>
-                    <img src="img/prod1.jpg" alt="" class="img-item">
-                    <span class="precio-item">$64.134</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Fuente</span>
-                    <img src="img/prod2.jpg" alt="" class="img-item">
-                    <span class="precio-item">$85.499</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Notebook</span>
-                    <img src="img/prod3.jpg" alt="" class="img-item">
-                    <span class="precio-item">$564.999</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Gabinete </span>
-                    <img src="img/prod5.jpg" alt="" class="img-item">
-                    <span class="precio-item">$137.059</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Silla Gamer Corsair T3 Rush </span>
-                    <img src="img/prod6.jpg" alt="" class="img-item">
-                    <span class="precio-item">$249.120</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Auriculares HyperX Cloud </span>
-                    <img src="img/prod7.jpg" alt="" class="img-item">
-                    <span class="precio-item">$82.000</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-                <div class="item">
-                    <span class="titulo-item"> Disco Sólido SSD M.2 ADATA 1TB </span>
-                    <img src="img/prod8.jpg" alt="" class="img-item">
-                    <span class="precio-item">$76.750</span>
-                    <button class="boton-item">Comprar</button>
-                </div>
-
-
+    <div class="contenedor">   
+        <header class="encabezado">
+            
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-fix.png" alt="logo"></a>
             </div>
-
-            <div class="carrito">
-                <div class="header-carrito">
-                    <h2>Tu Carrito</h2>
+            <!--<div class="container_buscar">
+                <input type="text" placeholder="Buscar">
+                <div class="btn">
+                    <i class="fa fa-search"></i>
                 </div>
-                <div class="carrito-items">
-                    <!--
-                    <div class="carrito-item">
+            </div>-->
+            <nav>
+                <a id="iniciarSesion" class="nav-link">Inicio Sesion</a>
+                <a class="nav-link">Registrarse</a>
+                <i class="fa-solid fa-cart-shopping" id="carro"></i>
+            </nav>
+                
+            
+        </header>
+        <nav id="menu" class="menu">
+            <ul>
+                
+                <li>
+                    <p class="section_productos">PRODUCTOS</p>
+                </li>
+                <li>
+                    <p id="carrito" class="section_pc">ARMA TU PC</p>
+                </li>
+                <li>
+                    <p class="section_ayuda">AYUDA</p>
+                </li>
+                <li>
+                    <p class="section_contacto">CONTACTO</p>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="contenedor1">
+                <div class="contenedor-items">
+
+                    <div class="item">
+                        <span class="titulo-item"> Monitor </span>
+                        <img src="img/prod4.jpg" alt="" class="img-item">
+                        <span class="precio-item">$97.749</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Procesador Ryzen 3 </span>
+                        <img src="img/prod1.jpg" alt="" class="img-item">
+                        <span class="precio-item">$64.134</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Fuente</span>
+                        <img src="img/prod2.jpg" alt="" class="img-item">
+                        <span class="precio-item">$85.499</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Notebook</span>
+                        <img src="img/prod3.jpg" alt="" class="img-item">
+                        <span class="precio-item">$564.999</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Gabinete </span>
+                        <img src="img/prod5.jpg" alt="" class="img-item">
+                        <span class="precio-item">$137.059</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Silla Gamer Corsair T3 Rush </span>
+                        <img src="img/prod6.jpg" alt="" class="img-item">
+                        <span class="precio-item">$249.120</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Auriculares HyperX Cloud </span>
+                        <img src="img/prod7.jpg" alt="" class="img-item">
+                        <span class="precio-item">$82.000</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+                    <div class="item">
+                        <span class="titulo-item"> Disco Sólido SSD M.2 ADATA 1TB </span>
+                        <img src="img/prod8.jpg" alt="" class="img-item">
+                        <span class="precio-item">$76.750</span>
+                        <button class="boton-item">Comprar</button>
+                    </div>
+
+
+                </div>
+
+                <div class="carrito">
+                    <div class="header-carrito">
+                        <h2>Tu Carrito</h2>
+                    </div>
+                    <div class="carrito-items">
+                        <!--
                         <div class="carrito-item">
-                            <img src="img/prod4.jpg" alt="" width="80px">
-                            <div class="carrito-item-detalles">
-                                <span class="carrito-item-titulo">Monitor</span>
-                                <div class="selector-cantidad">
-                                    <i class="fa-solid fa-minus restar-cantidad"></i>
-                                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            <div class="carrito-item">
+                                <img src="img/prod4.jpg" alt="" width="80px">
+                                <div class="carrito-item-detalles">
+                                    <span class="carrito-item-titulo">Monitor</span>
+                                    <div class="selector-cantidad">
+                                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                    </div>
+                                    <span class="carrito-item-precio">$97.749</span>
+
                                 </div>
-                                <span class="carrito-item-precio">$97.749</span>
-
+                                <span class="btn-eliminar">
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
                             </div>
-                            <span class="btn-eliminar">
-                                <i class="fa-solid fa-trash"></i>
-                            </span>
                         </div>
-                    </div>
 
-                    <div class="carrito-item">
                         <div class="carrito-item">
-                            <img src="img/prod2.jpg " alt="" width="80px">
-                            <div class="carrito-item-detalles">
-                                <span class="carrito-item-titulo">Fuente</span>
-                                <div class="selector-cantidad">
-                                    <i class="fa-solid fa-minus restar-cantidad"></i>
-                                    <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                                    <i class="fa-solid fa-plus sumar-cantidad"></i>
-                                </div>
-                                <span class="carrito-item-precio">$85.499</span>
+                            <div class="carrito-item">
+                                <img src="img/prod2.jpg " alt="" width="80px">
+                                <div class="carrito-item-detalles">
+                                    <span class="carrito-item-titulo">Fuente</span>
+                                    <div class="selector-cantidad">
+                                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                                    </div>
+                                    <span class="carrito-item-precio">$85.499</span>
 
+                                </div>
+                                <span class="btn-eliminar">
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
                             </div>
-                            <span class="btn-eliminar">
-                                <i class="fa-solid fa-trash"></i>
-                            </span>
                         </div>
+                        -->
+                </div>
+                    <div class="carrito-total">
+                        <div class="fila">
+                            <strong>Tu total</strong>
+                            <span class="carrito-precio-total">$0</span>
+                        </div>
+                        <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
                     </div>
-                    -->
-            </div>
-                <div class="carrito-total">
-                    <div class="fila">
-                        <strong>Tu total</strong>
-                        <span class="carrito-precio-total">$0</span>
-                    </div>
-                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+
+
                 </div>
 
-
             </div>
-
-        </div>
-    </section>
-    
+        </section>
+    </div>
 </body>
 </html>
