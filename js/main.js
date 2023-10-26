@@ -6,7 +6,7 @@ window.onload = () => {
     // $(".section_inicio").click(()=>{window.open("index.html");})
     $(".section_productos").click(() => { requestAllProducts("/category/electronics"); })
     $(".section_pc").click(() => { window.open("agregarProducto.html",'_self'); })
-    // $(".section_ayuda").click(() => { requestAllProducts("/category/men's clothing"); })
+    $(".section_ayuda").click(() => { window.open("ayuda.html",'_self'); })
     $(".section_contacto").click(() => { window.open("contacto.html",'_self'); })
 
     //Click event del carrito

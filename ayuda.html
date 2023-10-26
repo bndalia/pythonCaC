@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de ayuda</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/ayuda.css">
+
+
+    <script src="https://kit.fontawesome.com/ba0ac8d1c6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;800&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src='js/main.js'></script>
+
+        <!--Libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ba0ac8d1c6.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+                
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-fix.png" alt="logo"></a>
+            </div>
+            <!--<div class="container_buscar">
+                <input type="text" placeholder="Buscar">
+                <div class="btn">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>-->
+            <nav>
+                <a id="iniciarSesion" class="nav-link">Inicio Sesion</a>
+                <a class="nav-link">Registrarse</a>
+                <i class="fa-solid fa-cart-shopping" id="carro"></i>
+            </nav>
+                
+            
+        </header>
+        <nav id="menu" class="menu">
+            <ul>
+                
+                <li>
+                    <p class="section_productos">PRODUCTOS</p>
+                </li>
+                <li>
+                    <p id="carrito" class="section_pc">ARMA TU PC</p>
+                </li>
+                <li>
+                    <p class="section_ayuda">AYUDA</p>
+                </li>
+                <li>
+                    <p class="section_contacto">CONTACTO</p>
+                </li>
+            </ul>
+        </nav>
+        
+
+    </div>
+
+    <br>
+
+    <div class="ayuda">
+        <h1>Preguntas Frecuentes</h1>
+        <br>
+        <br>
+    <details class="collapse">
+        <summary class="title">¿Cómo realizo un pedido?</summary>
+        <div class="description">Solo tenés que seleccionar todos los productos que deseas adquirir. Seguidamente, en el carrito de compras, Luego hacés clic en el botón COMPRAR y. También enviaremos un mail a tu correo electrónico registrado con los detalles del pedido realizado.</div>
+        </details>
+        <details class="collapse">
+        <summary class="title">¿El precio que figura en la web es el precio final?</summary>
+        <div class="description">Todos los precios en la web incluyen el IVA, y se encuentran expresados en pesos argentinos.</div>
+        </details>
+        <details class="collapse">
+        <summary class="title">¿Cuáles son las formas de pago?</summary>
+        <div class="description">Contamos con dos formas de pago: a través de depósito/transferencia bancaria, con la cual obtenés el precio especial, o bien, a través de tarjeta de creditos (Visa o MasterCard) o MercadoPago (Tarjetas online, PagoFácil y RapiPago) con los cuales podés abonar en cuotas, al precio de lista.</div>
+        </details>
+    
+    </div>
+   
+    
+</body>
+</html>
