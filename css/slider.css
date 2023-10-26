@@ -5,9 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  
 }
+
 body{
   min-height: 100vh;
   display: flex;
@@ -96,6 +95,7 @@ body{
   font-weight: 500;
   color: #333;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
   
 }
 .description{

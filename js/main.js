@@ -1,31 +1,15 @@
-var carrito;
-var usu = "";
-var listaUsuarios = [];
+
 window.onload = () => {
-   /* emailjs.init("9FGoHE7v3zGxA7-gg");
 
-    let cart = JSON.parse(localStorage.getItem('carrito'));
-    if (cart != null) {
-        carrito = new CarritoCompra(cart);
-    } else {
-        carrito = new CarritoCompra();
-    }
-
-    let usuarios = JSON.parse(localStorage.getItem('usuarios'));
-    if (usuarios != null) {
-        listaUsuarios = usuarios;
-    } else {
-        listaUsuarios = [];
-    }*/
 
     //Click events para las categorías
     $(".section_productos").click(() => { requestAllProducts("/category/electronics"); })
-    $(".section_pc").click(() => { window.open("agregarProducto.html"); })
+    $(".section_pc").click(() => { window.open("agregarProducto.html",'_self'); })
     // $(".section_ayuda").click(() => { requestAllProducts("/category/men's clothing"); })
-    $(".section_contacto").click(() => { window.open("contacto.html"); })
+    $(".section_contacto").click(() => { window.open("contacto.html",'_self'); })
 
     //Click event del carrito
-    $("#carro").click(() => { showCart(); });
+    //$("#carro").click(() => { showCart(); });
 
     //Click events de registro e inicio de sesión
     //$("#registro").click(() => { showRegistro(); });
