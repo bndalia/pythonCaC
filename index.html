@@ -72,10 +72,11 @@
                 </li>
             </ul>
         </nav>
-        <main class="contenido">
+        <main class="contenido" id="prueba">
+            
             <section id="carrusel">
                 
-                <div class="container">
+                <div class="container" id="container">
                     <input type="radio" name="slider" id="item-1">
                     <input type="radio" name="slider" id="item-2">
                     <input type="radio" name="slider" id="item-3">
@@ -251,12 +252,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                 
         
                     <div class="swiper-button-next swiper-navBtn"></div>
                     <div class="swiper-button-prev swiper-navBtn"></div>
                     
                 </div>
+            </div>
             </div>
         </main>
         
@@ -307,6 +309,12 @@
 
     <!-- JavaScript -->
     <script src="js/script-slider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+          $('.contenido').load('.agregarProducto.html');
+        });
+    </script>
 
 </html>
 
