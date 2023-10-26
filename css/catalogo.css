@@ -42,7 +42,7 @@ main .catalogo .item-container .item {
 
     /*Borde*/
     border: 2px solid black;
-    border-radius: 2rem;
+    border-radius: 1rem;
 
     /*Letra*/
     color: black;

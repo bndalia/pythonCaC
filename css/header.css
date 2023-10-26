@@ -16,10 +16,11 @@
     color: white;
     font-weight: 600;
     padding-right: 15px;
+	cursor:pointer;
 }
 
 .contenedor .encabezado nav a:hover{
-    color: black;
+    text-decoration: underline;
 }
 
 

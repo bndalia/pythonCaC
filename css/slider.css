@@ -148,6 +148,27 @@ body{
   .slide-content{
     margin: 0 10px;
   }
+
+  .slide-container{
+    max-width: 768px;
+  
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1366px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+
+  .slide-container{
+    max-width: 1326px;
+
+  }
+
   .swiper-navBtn{
     display: none;
   }
