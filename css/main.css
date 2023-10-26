@@ -73,7 +73,7 @@ body{
 }
 
 .contenedor .pie{
-    background: 0f1729;
+    background: #0f1729;
     color: #fff;
     grid-area: pie; 
    /* max-height: 120px;*/
