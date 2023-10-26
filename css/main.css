@@ -42,7 +42,7 @@ body{
 }
 
 .contenedor .encabezado{
-    background: darkblue;
+    background: #0f1729;
     color: #fff;
     grid-area: encabezado; 
     display: flex;
@@ -73,7 +73,7 @@ body{
 }
 
 .contenedor .pie{
-    background: darkblue;
+    background: 0f1729;
     color: #fff;
     grid-area: pie; 
    /* max-height: 120px;*/
