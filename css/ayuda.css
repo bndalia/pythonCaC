@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap);
+
 :root {
     --space-xxs: 4px;
     --space-xs: 8px;
@@ -14,23 +16,25 @@
   body {
     background-color: white;
     color: var(--text-color);
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     width: auto;
   }
 
   .ayuda{
-   width: 100%;
-   
+    grid-area: contenido;
+    width: 100%;
+    height: 530px;  
 
   }
+
  h1{
     text-align: center;
   }
   
   .collapse {
   
-    border: solid 1px var(--gray-lighter);
+    border: solid 1px lightgrey;
     border-radius: 4px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
     margin-left: auto;
@@ -48,7 +52,7 @@
     }
   
     &:hover {
-      background-color: var(--gray-lighter);
+      background-color: rgb(230, 229, 229);
   
       .title:after {
         content: "+";
@@ -78,7 +82,7 @@
   }
   
   .description {
-    border-top: var(--gray-light) solid 1px;
+    border-top: lightgray solid 1px;
     font-size: 14px;
     line-height: 21px;
     padding: var(--space-sm);

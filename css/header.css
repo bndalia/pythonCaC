@@ -7,9 +7,9 @@
 }
 
 .logo img{
-    height: 85px;
+    height: 80px;
     width: 200px;
-    border-radius: 80%;
+   /* border-radius: 80%;*/
 }
 
 .contenedor .encabezado nav a{
