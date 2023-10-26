@@ -1,5 +1,5 @@
 /**
- * Rellena el html con la vista de iniciar sesión
+ * Carga el html con la vista de iniciar sesión
  */
 function showLogin() {
     let main = $("main");

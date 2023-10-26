@@ -3,7 +3,7 @@ main .login {
     /*Display*/
     display: flex;
     justify-content: center;
-
+    background-color: #eee;
     /*Letra*/
     font-size: 150%;
 }
@@ -15,7 +15,7 @@ main .login .inicioSesionForm {
     padding: 2rem;
 
     /*Estilo*/
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
     border-radius: 2rem;
 
     /*Display*/
@@ -27,18 +27,20 @@ main .login .inicioSesionForm {
 
 /*Fielset*/
 main .login fieldset {
-    border: 0;
+    border: 1;
+    border-width: 5px;
+    padding: 10px;
 }
 
 /*Legend*/
 main .login .inicioSesionForm fieldset legend {
     /*Centrado*/
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    /**margin-left: auto;
+    margin-right: auto;*/
 
-    font-size: 200%;
-    font-family: 'Cinzel', serif;
+    font-size: 150%;
+    font-family: 'Poppins', serif;
 }
 
 main .login .inicioSesionForm fieldset div {
@@ -83,16 +85,17 @@ main .login .inicioSesionForm>input {
 
     /*Colores*/
     color: white;
-    background-image: linear-gradient(to right, var(--fucsia), var(--dark-blue));
+    background-color: darkblue;
+    cursor: pointer;
 }
 
 /*Botón submit hover*/
 main .login .inicioSesionForm>input:hover {
-    background-image: linear-gradient(to left, var(--fucsia), var(--dark-blue));
+    background-color: blue;
 
     /*Borde*/
     border-radius: 1rem;
-    border: 1px solid var(--grey);
+    border: 1px solid black;
 }
 
 /*------------MEDIA QUERIES------------*/
